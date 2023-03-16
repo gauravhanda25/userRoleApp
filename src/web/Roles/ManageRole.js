@@ -12,6 +12,8 @@ const ManageRole = (props) => {
     roleLabel: Yup.string().required("Role Name is required"),
   });
 
+  const errorStyle = { fontSize: "12px", color: "red" };
+
   return (
     <Formik
       initialValues={roleData}
@@ -36,7 +38,7 @@ const ManageRole = (props) => {
               fullWidth
               required
             />
-            <ErrorMessage name="roleLabel" component="p" />
+            <ErrorMessage name="roleLabel" component="span" style={errorStyle} />
 
             <DialogActions>
               <Button onClick={() => setShowForm(false)}>Cancel</Button>

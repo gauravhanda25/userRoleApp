@@ -104,7 +104,8 @@ const Roles = () => {
           </Table>
         </TableContainer>
 
-        <Dialog open={showForm} onClose={() => setShowForm(false)}>
+        <Dialog open={showForm} onClose={() => setShowForm(false)} fullWidth
+          maxWidth={"sm"}>
           <DialogTitle>
             {editRowData?.id ? "Edit Role" : "Add Role"}
           </DialogTitle>
@@ -113,7 +114,8 @@ const Roles = () => {
           </DialogContent>
         </Dialog>
 
-        <Dialog open={showConfirmBox} onClose={() => setShowConfirmBox(false)}>
+        <Dialog open={showConfirmBox} onClose={() => setShowConfirmBox(false)} fullWidth
+          maxWidth={"sm"}>
           <DialogTitle id="alert-dialog-title">{"Confirm"}</DialogTitle>
           <DialogContent>
             <DialogContentText id="alert-dialog-description">
