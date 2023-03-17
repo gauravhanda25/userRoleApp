@@ -23,7 +23,7 @@ import { Edit, Delete } from "@mui/icons-material";
 import { deleteRow } from "../../store/slices/userSlice";
 import ManageUser from "./ManageUser";
 
-const Roles = () => {
+const Users = () => {
   const dispatch = useDispatch();
 
   const [showForm, setShowForm] = useState(false);
@@ -158,4 +158,4 @@ const Roles = () => {
   );
 };
 
-export default Roles;
+export default React.memo(Users);
